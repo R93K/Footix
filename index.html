@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="style.css">
+     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+     <title>Footix</title>
+  </head>
+  <body>
+
+
+<!-- HEADER --> 
+
+  <div class="header">
+    <img src="images/footix.png">
+  </div><br />
+
+
+<!-- TOP NAV --> 
+
+  <div class="topnav">
+    <a href='index.html' >Accueil</a>
+    <a href="#" >Ligue 1</a>
+    <a href="#" >Premier League</a>
+    <a href="#" >Liga</a>
+    <a href="#" >Bundesliga</a>
+    <a href="#" >Serie A</a>
+    <a href="#" >Autres championnats</a>
+    <a href="#" >Coupes d'Europe</a>
+    <a href="#" >Equipes nationales</a>
+    <div class="login-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Username" name="username">
+        <input type="text" placeholder="Password" name="psw">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+
+<!-- COLONNE GAUCHE --> 
+
+  <div class="row">
+  <div class="leftcolumn">
+
+  <!-- ARTICLES --> 
+
+  <div class="card">
+   
+     <img class=article src="images/mbappe.png">
+     <h1>Kylian M'bappé</h1> 
+     <h2>Attaquant, PSG, 21 ans</h2>
+       <p>Kylian Mbappé, né le 20 décembre 1998 dans le 19e arrondissement de Paris, est un footballeur international français qui évolue au poste d'attaquant au Paris Saint-Germain. Classé 6e au Ballon d'or fin 2019, il est déjà considéré comme l'un des meilleurs joueurs du monde.
+          Vainqueur du championnat de France en 2017 avec l'AS Monaco, il est transféré au Paris Saint-Germain le 31 août 2017. Le soir même, il marque son premier but en équipe de France.
+          Kylian Mbappé est l'un des acteurs majeurs de l'équipe de France qui remporte la Coupe du monde 2018 en Russie. 
+          Fin 2018, remporte le trophée Kopa du meilleur joueur mondial de l'année de moins de 21 ans. Le 11 juin 2019, il est le plus jeune joueur inscrire 100 buts en professionnel, à 20 ans et 5 mois.
+          <br /><br /><a class="wiki" href="https://fr.wikipedia.org/wiki/Kylian_Mbapp%C3%A9" target="_blank"> > Consulter sa biographie sur Wikipedia < </a>
+      </p>
+  </div>
+
+  <div class="card">
+     <img class=article src="images/vandijk.png">
+     <h1>Virgil Van Dijk</h1>
+     <h2>Défenseur, Liverpool, 28 ans</h2></p>
+       <p>Virgil van Dijk, né le 8 juillet 1991 à Bréda, est un footballeur international néerlandais qui évolue au poste de défenseur au Liverpool FC.
+          Le 27 décembre 2017, le défenseur néerlandais s'engage finalement avec le Liverpool FC, le transfert prenant effet le 1er janvier suivant, à l'ouverture du marché des transferts hivernal14. Il devient alors le défenseur le plus cher de l'histoire, ce transfert étant estimé à 84 millions d'euros. 
+          Le 5 janvier suivant, il participe à sa première rencontre avec les Reds en étant titularisé lors d'un match de Coupe d'Angleterre contre Everton.
+          En octobre 2019, Virgil van Dijk figure parmi les trente nommés pour le Ballon d'or. Il termine deuxième de ce Ballon d'or, derrière Lionel Messi20.
+          <br /><br /><a class="wiki" href="https://fr.wikipedia.org/wiki/Virgil_van_Dijk" target="_blank"> > Consulter sa biographie sur Wikipedia < </a>
+       </p>
+  </div>
+
+
+  <!-- DIAPORAMA -->
+
+  <div class="card">
+  <div class="container">
+
+    <!-- PHOTOS GRANDES -->
+
+    <div class="mySlides">
+      <img src="images/tifos/1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/tifos/2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/tifos/3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/tifos/4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/tifos/5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/tifos/6.png" style="width:100%">
+    </div>
+
+     <!-- BOUTON -->
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+     <!-- TEXTE PHOTOS -->
+    <div class="caption-container">
+    <p id="caption"></p>
+    </div>
+
+    <!-- PHOTOS MINIATURES -->
+    <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/tifos/1.png" style="width:100%" onclick="currentSlide(1)" alt="Borussia Dortmund - Juventus Turin - 18/03/2015">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/tifos/2.png" style="width:100%" onclick="currentSlide(2)" alt="Legia Varsovie - Borussia Dortmund - 14/09/2016">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/tifos/3.png" style="width:100%" onclick="currentSlide(3)" alt="Paris Saint-Germain - Olympique de Marseille - 27/10/2019">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/tifos/4.png" style="width:100%" onclick="currentSlide(4)" alt="Olympique Lyonnais - AS Saint-Etienne - 25/02/2018">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/tifos/5.png" style="width:100%" onclick="currentSlide(5)" alt="Stades Rennais - FC Nantes - 11/11/2018">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/tifos/6.png" style="width:100%" onclick="currentSlide(6)" alt="Legia Varsovie - Sheriff Tiraspol - 17/08/2017">
+    </div>
+  </div>
+  </div>
+</div>  
+</div>
+
+
+
+<!-- COLONNE DROITE --> 
+
+  <div class="rightcolumn">
+    <div class="card">
+      <center><img src="images/euro.png" height=60% width=60%><p id="euro"></p></center>
+      <p class="demo"></p>
+    </div>
+    <div class="card">
+      <center><h2>Inscription</h2></center><br />
+      <div class="inscription">
+        <form action="/action_page.php">
+          <label for="fname">Pseudo</label>
+          <input type="text" id="fname" name="Pseudo" placeholder="Ton pseudo"><br>
+
+          <label for="lname">E-mail</label>
+          <input type="text" id="lname" name="E-mail" placeholder="adresse@mail.fr"><br>
+      
+          <label for="lname">Mot de passe</label>
+          <input type="password" id="lname" name="Mot de passe" placeholder="Ton mot de passe"><br>
+          </select>
+        
+          <input type="submit" value="S'inscrire">
+        </form>
+      </div>
+      </div>
+    <div class="card">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1e76-8ug7Do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+    </div>
+    <div class="zizou">
+      <img src="images/zidane.jpg" alt="Avatar" style="width:90px">
+      <p><span>Zinedine Zidane.</span> <br /> Entraineur du Real Madrid</p>
+      <p class="zidane">"Footix, c'est vraiment bieng comme site."</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Design & Integration : Remy ROLLAND</h2>
+</div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>

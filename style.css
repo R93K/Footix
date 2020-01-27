@@ -1,0 +1,370 @@
+body {
+  padding: 10px;
+  background: #f1f1f1;
+  color: #14477e;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  border: 1px dashed #14477e;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: 'Lobster', Georgia, Times, serif;
+	font-size: 40px;
+  text-shadow: 2px 2px #be1303;
+  margin-bottom: 10px;
+}
+
+h2 {  
+  font-family: 'Lobster', Georgia, Times, serif;
+	font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  color: #be1303;
+}
+
+p {	
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+
+  
+
+/*TOP NAV*/
+.topnav {
+  overflow: hidden;
+  background-color: #14477e;
+  border-radius: 10px;
+  border: 3px solid #ffdd24;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffdd24;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #e53634;
+  color: #ffdd24;
+}
+
+/* LOGIN CONTENANT */
+.topnav .login-container {
+  float: right;
+  padding-left: 10px;
+}
+
+/* LOGIN ZONE TEXTE */
+.topnav input[type=text] {
+  background: #ffdd24;
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  color: #e54634;
+  border: none;
+  width: 150px;
+}
+
+/* BOUTON LOGIN */
+.topnav .login-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ffdd24;
+  color: #e54634;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.topnav .login-container button:hover {
+  background: #e53634;
+  color: #ffdd24;
+}
+
+
+/*COLONNE GAUCHE*/
+
+.leftcolumn {   
+  float: left;
+  width: 70%;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px dashed #14477e;
+  border-radius: 5px;
+}
+
+.article {
+  float:left;
+  margin:10px;
+  padding-right: 30px;
+  border: 1px solid #14477e;
+  border-radius: 15px 50px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.article:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+.wiki:link, .wiki:visited, .wiki:active {
+    color: #be1303;
+    background-color: transparent;
+    text-decoration: none;
+  }
+    
+.wiki:hover {
+    color: #ffdd24;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.row:after {
+  display: table;
+  clear: both;
+}
+
+
+
+/* DIAPORAMA */
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+ /* CACHER LES PHOTOS PAR DEFAUT */
+.mySlides {
+  display: none;
+}
+
+ /* CURSEUR QUAND SURVOLE MINIATURE */
+.cursor {
+  cursor: pointer;
+}
+
+ /* BOUTONS PRECEDENT ET SUIVANT */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+
+ /* POSITION DU BOUTON "SUIVANT" */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+ /* BOUTONS SUIVANTS/PRECENDENTS SURVOLES */
+.prev:hover,
+.next:hover {
+  background-color: #e54634;
+}
+
+ /* CADRE TEXTE IMAGE */
+.caption-container {
+  text-align: center;
+  background-color: #14477e;
+  padding: 2px 16px;
+  color: #ffdd24;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ /* 6 COLONNES MINIATURES */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+ /* EFFET TRANSPARENT MINIATURES */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/*COLONNE DROITE*/
+
+.rightcolumn {
+  float: left;
+  width: 29%;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+}
+
+/*DECOMPTE EURO*/
+#euro {
+  font-size: 30px;
+  color: #e53634;
+  font-family: 'Lobster', Georgia, Times, serif;
+  margin-bottom: 0;
+} 
+
+.inscription {
+  border: #14477e dashed 1px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 14px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 70%;
+  position: static;
+  background-color: #14477e;
+  color: white;
+  padding: 14px 20px;
+  display: block;
+  margin: 8px auto 0;
+  border: solid 3 px #e53634;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #e53634;
+}
+
+embed, iframe, object
+{
+max-width: 100%;
+}
+
+/* TEMOIGNAGE ZIDANE */
+
+/* CONTENANT */
+.zizou {
+  border: 1px dashed #14477e;
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.zidane {
+  font-style: italic;
+}
+
+/* STYLE PHOTO */
+.zizou img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* POLICE ECRITURE */
+.zizou span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* STYLE TEXTE */
+@media (max-width: 500px) {
+  .zizou {
+    text-align: center;
+  }
+
+  .zizou img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  margin-bottom: 0;
+  border: solid #be1303;
+  border-radius: 50px;
+}
+
+/* RESPONSIVE LAYOUT */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
